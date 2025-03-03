@@ -1,10 +1,10 @@
 # Amelia Descontador
 
-WordPress plugin that allows manual deduction of classes from Amelia Booking packages.
+WordPress plugin that allows manual deduction of past sessions from Amelia Booking client's packages.
 
 ## Description
 
-This plugin extends the functionality of [Amelia Booking](https://wpamelia.com/), allowing administrators to manually deduct sessions from customers' class packages. It is especially useful for yoga studios, pilates studios, gyms, and other businesses that offer class packages.
+This plugin extends the functionality of [Amelia Booking](https://wpamelia.com/), allowing administrators to manually deduct sessions that are packageless from customers' class packages. This plug-in acts as a fix for the issue in which you cannot manually book package appointments after the designated time slot has passed.
 
 ## Features
 
@@ -29,7 +29,7 @@ This plugin extends the functionality of [Amelia Booking](https://wpamelia.com/)
 
 ## Usage
 
-1. Go to Amelia > Deduct Classes in the WordPress admin menu
+1. Go to Amelia > Descontar Clases in the WordPress admin menu
 2. Search for a customer by name or email
 3. Select an active package and click "Deduct"
 4. Select an appointment without an assigned package to link it to the package
