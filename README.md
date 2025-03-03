@@ -63,7 +63,7 @@ This plugin is licensed under the [GPL v2 or later](https://www.gnu.org/licenses
 
 ## Credits
 
-Developed by [Your Name](https://example.com)
+Developed by Rocash
 
 ## Changelog
 
