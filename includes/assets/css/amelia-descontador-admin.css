@@ -1,0 +1,203 @@
+/**
+ * Estilos para la interfaz de administración del plugin Amelia Descontador
+ */
+
+/* Contenedor principal */
+.amelia-descontador-container {
+    max-width: 1200px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Encabezados */
+.amelia-descontador-container h1 {
+    color: #23282d;
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.amelia-descontador-container h2 {
+    color: #23282d;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0 15px;
+    padding: 0;
+}
+
+.amelia-descontador-container h3 {
+    color: #23282d;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 15px 0 10px;
+    padding: 0;
+}
+
+/* Selector de cliente */
+.amelia-descontador-container .cliente-selector {
+    margin-bottom: 20px;
+}
+
+.amelia-descontador-container .cliente-selector label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Tablas */
+.amelia-descontador-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.amelia-descontador-container table th {
+    text-align: left;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.amelia-descontador-container table td {
+    padding: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    vertical-align: middle;
+}
+
+/* Botones */
+.amelia-descontador-container .button {
+    margin-right: 5px;
+}
+
+.amelia-descontador-container .button-primary {
+    background: #0073aa;
+    border-color: #006799;
+    color: #fff;
+}
+
+.amelia-descontador-container .button-primary:hover {
+    background: #006799;
+}
+
+.amelia-descontador-container .button-secondary {
+    background: #f7f7f7;
+    border-color: #ccc;
+    color: #555;
+}
+
+.amelia-descontador-container .button-secondary:hover {
+    background: #f0f0f0;
+}
+
+/* Mensajes de notificación */
+.amelia-descontador-container .notice,
+#citas_sin_paquete .notice {
+    background: #fff;
+    border-left: 4px solid #dc3232;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 15px 0;
+    padding: 12px;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.amelia-descontador-container .notice-success,
+#citas_sin_paquete .notice-success {
+    border-left-color: #46b450;
+}
+
+.amelia-descontador-container .notice-warning,
+#citas_sin_paquete .notice-warning {
+    border-left-color: #ffb900;
+}
+
+.amelia-descontador-container .notice-info,
+#citas_sin_paquete .notice-info {
+    border-left-color: #00a0d2;
+}
+
+/* Indicador de carga */
+.loading-indicator {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Estilos para Select2 */
+.select2-container--default .select2-selection--single {
+    height: 32px;
+    border-color: #ddd;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 32px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .amelia-descontador-container {
+        padding: 15px;
+    }
+    
+    .amelia-descontador-container table th,
+    .amelia-descontador-container table td {
+        padding: 8px;
+    }
+    
+    .amelia-descontador-container .button {
+        margin-bottom: 5px;
+    }
+}
+
+/* Mensajes personalizados (independientes de las notices de WordPress) */
+.amelia-mensaje {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-left: 4px solid #ccc;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.amelia-mensaje h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.amelia-mensaje p {
+    margin-bottom: 10px;
+}
+
+.amelia-mensaje-success {
+    border-left-color: #46b450;
+}
+
+.amelia-mensaje-warning {
+    border-left-color: #ffb900;
+    background-color: #fff8e5;
+}
+
+.amelia-mensaje-info {
+    border-left-color: #00a0d2;
+    background-color: #f0f8ff;
+}
+
+.amelia-mensaje-error {
+    border-left-color: #dc3232;
+    background-color: #fef7f7;
+} 
