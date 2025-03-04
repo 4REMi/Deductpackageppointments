@@ -12,6 +12,8 @@ class Amelia_Descontador_Cita {
         
         // Calcular la fecha límite (35 días atrás desde hoy)
         $fecha_limite = date('Y-m-d', strtotime('-35 days'));
+        // Calcular la fecha máxima (2 días en el futuro)
+        $fecha_maxima = date('Y-m-d', strtotime('+2 days'));
         
         $bookings = $wpdb->get_results($wpdb->prepare(
             "SELECT cb.id, cb.created, a.bookingStart, a.bookingEnd, u.firstName, u.lastName, s.name as serviceName
@@ -24,10 +26,10 @@ class Amelia_Descontador_Cita {
              AND cb.packageCustomerServiceId IS NULL 
              AND cb.status = 'approved'
              AND DATE(a.bookingStart) >= %s
-             AND DATE(a.bookingStart) <= CURDATE()
+             AND DATE(a.bookingStart) <= %s
              ORDER BY a.bookingStart DESC
              LIMIT 20",
-            $customerId, $serviceId, $fecha_limite
+            $customerId, $serviceId, $fecha_limite, $fecha_maxima
         ));
         
         return $bookings;
